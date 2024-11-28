@@ -15,7 +15,7 @@ const provider = await SerliProvider.create("your_api_key");
 OpenFeature.setProvider(provider);
 ```
 
->You must replace `your_api_key` with your api key and that's it.
+You must replace `your_api_key` with your api key and that's it.
 
 ### Example
 **Get the value of a flag**:
