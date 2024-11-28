@@ -1,5 +1,31 @@
-# Vue 3 + Vite
+## FF-Serli OpenFeature Provider for the client
+Here you can find a simple [VueJs](https://vuejs.org/) application that showcase how to instanciate and use our provider.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Usage
+The OpenFeature provider interface for the client being synchronous, we need to fetch the values
+of the flag at the creation of the provider.
+You can create the provider with the following lines:
+```js
+import SerliProvider from "ff-serli-openfeature-provider-client";
+```
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+and then associate it to OpenFeature with
+```js
+const provider = await SerliProvider.create("your_api_key");
+OpenFeature.setProvider(provider);
+```
+
+>You must replace `your_api_key` with your api key and that's it.
+
+### Example
+**Get the value of a flag**:
+```js
+let client = OpenFeature.getClient();
+const flag_value = client.getStringValue(flag, "default string value"),
+```
+
+**Get the value and details of a flag**:
+```js
+let client = OpenFeature.getClient();
+const flag_value = client.getStringDetails(flag, "default string value"),
+```
