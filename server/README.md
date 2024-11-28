@@ -1,5 +1,6 @@
 ## FF-Serli OpenFeature Provider for the server
-Here you can find a simple [express.js](https://expressjs.com/) application that showcase how to instanciate and use our provider.
+Here you can find a simple [express.js](https://expressjs.com/) application that showcase how to instanciate and use our
+[provider](https://github.com/Dylan-Serli/ff-serli-openfeature-provider-server).
 
 ### Usage
 You can create the provider and associate it with openfeature with the following lines:

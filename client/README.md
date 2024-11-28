@@ -1,5 +1,6 @@
 ## FF-Serli OpenFeature Provider for the client
-Here you can find a simple [VueJs](https://vuejs.org/) application that showcase how to instanciate and use our provider.
+Here you can find a simple [VueJs](https://vuejs.org/) application that showcase how to instanciate and use our
+[provider](https://github.com/Dylan-Serli/ff-serli-openfeature-provider-client).
 
 ### Usage
 The OpenFeature provider interface for the client being synchronous, we need to fetch the values
