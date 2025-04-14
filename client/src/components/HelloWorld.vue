@@ -13,7 +13,9 @@ const flag_value = ref("");
 
 onMounted(async () => {
     //create the provider
-    const provider = await SerliProvider.create("your_api_key");
+    const provider = await SerliProvider.create(
+        "94470a2be2c64036b3dcd9083c35a7007879547b0ba040e6948bb27228a7541c",
+    );
     OpenFeature.setProvider(provider);
 });
 
