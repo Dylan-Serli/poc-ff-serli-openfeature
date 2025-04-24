@@ -12,11 +12,11 @@ import SerliProvider from "ff-serli-openfeature-provider-client";
 
 and then associate it to OpenFeature with
 ```js
-const provider = await SerliProvider.create("your_api_key");
+const provider = await SerliProvider.create("your_api_key", "your_project_id");
 OpenFeature.setProvider(provider);
 ```
 
-You must replace `your_api_key` with your api key and that's it.
+You must replace `your_api_key` with your api key and `your_project_id` with your project id and that's it.
 
 ### Example
 **Get the value of a flag**:

@@ -6,9 +6,9 @@ Here you can find a simple [express.js](https://expressjs.com/) application that
 You can create the provider and associate it with openfeature with the following lines:
 ```js
 import SerliProvider from "ff-serli-openfeature-provider-server";
-OpenFeature.setProvider(new SerliProvider("your_api_key"));
+OpenFeature.setProvider(new SerliProvider("your_api_key", "your_project_id"));
 ```
-You must replace `your_api_key` with your api key and that's it.
+You must replace `your_api_key` with your api key  and `your_project_id` with your project id and that's it.
 
 In the OpenFeature interface the methods to retrieve a flag value for the server application
 are asynchronous so you must use the functions with the `await` or the `then`
