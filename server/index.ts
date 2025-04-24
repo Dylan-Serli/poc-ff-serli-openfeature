@@ -5,7 +5,12 @@ import { OpenFeature, Client } from "@openfeature/server-sdk";
 //for now it is linked with npm while waiting to publish it
 import SerliProvider from "ff-serli-openfeature-provider-server";
 
-OpenFeature.setProvider(new SerliProvider("your_api_key"));
+OpenFeature.setProvider(
+  new SerliProvider(
+    "b7f52e9092f744299fd5bdae115faeb11abbf819fd8e40d0a1cb72057a937b70",
+    "d2af1c3b-d96f-44d5-a676-a23b064f6d68",
+  ),
+);
 const client: Client = OpenFeature.getClient();
 
 const app = express();
